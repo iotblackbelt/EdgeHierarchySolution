@@ -22,7 +22,6 @@
 <li>Follow the walk-through to use the upstream edge as a transparent gateway: [https://docs.microsoft.com/en-us/azure/iot-edge/how-to-create-transparent-gateway]</li>
 <li>Follow the steps as described in the "Connect a downstream device to an Azure IoT Edge gateway" tutorial on the downstream edge: [https://docs.microsoft.com/en-us/azure/iot-edge/how-to-connect-downstream-device#install-certificates-using-the-os], but make sure you copy the certificate file to the directory "/edge-ca-cert".
 </li>
-<li>Create an IoT Device in your IoT Hub and copy the connection string. This string will be used to act as the actual downstream device.</li>
 <li>Deploy your EdgeHierarchyModule to the downstream edge using the steps as described in: [Deploy Azure IoT Edge modules from the Azure portal].</li>
 <li><p>Set the Container Create Options to:</p>
 <pre><code class="lang-json">{
@@ -38,7 +37,7 @@
 </code></pre>
 </li><li>
 <p>And set the environment variables:</p>
-<pre><code>DOWNSTREAM_CONNECTIONSTRING = "&#x3C;Your IoT device connection string&#x3E;;GatewayHostName=&#x3C;name of your upstream edge&#x3E;"
+<pre><code>DOWNSTREAM_CONNECTIONSTRING = "&#x3C;Your IoT downstream edge connection string&#x3E;;GatewayHostName=&#x3C;name of your upstream edge&#x3E;"
 CERTIFICATE_FILENAME="&#x3C;name of your certificate file&#x3E;"
 </code></pre>
 </li>
