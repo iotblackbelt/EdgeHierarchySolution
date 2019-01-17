@@ -1,5 +1,5 @@
 # Azure IoT Edge Hierarchy Module
-<p>The Azure IoT Edge Hierarchy Module is a module that can be deployed to Azure IoT Edge to create a hierarchy of edges. This module uses the transparent gateway pattern.</p>
+<p>The Azure IoT Edge Hierarchy Module is an example module that can be deployed to Azure IoT Edge to create a hierarchy of edges. This module uses the transparent gateway pattern.</p>
 <p style="align:center">
 <img src="images/hierarchy.PNG">
 </p>
