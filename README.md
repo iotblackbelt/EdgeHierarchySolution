@@ -4,6 +4,9 @@
 <img src="images/hierarchy.PNG">
 </p>
 
+## Prerequisite
+<p>A good understanding of how Azure IoT Edge and IoT Hub works and some experience with deploying and developing custom Edge Modules.</p>
+
 ## How to build the module
 <p>Clone this repo and and open the folder in Visual Studio Code (with Azure IoT Edge extension installed).</p>
 <ol>
