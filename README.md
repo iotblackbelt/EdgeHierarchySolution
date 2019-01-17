@@ -20,14 +20,16 @@
 <li>
 <li>Setup the downstream edge as a downstream device:</li>
 <p>Set the Container Create Options and select <strong>Save</strong>.</p>
-    <pre><code class="lang-json">{
+    <pre><code class="lang-json">
+    {
+      {
   "HostConfig": {
     "Privileged": true,
     "Binds": [
       "/edge-ca-cert:/edge-ca-cert"
     ],
     "ExtraHosts": [
-      "#x3C;name of your upstream edge&#x3E;:#x3C;ip address upstream edge&#x3E;"
+      "&#x3C;name of your upstream edge&#x3E;:&#x3C;ip address upstream edge&#x3E;"
     ]
   }
 }
