@@ -55,3 +55,11 @@ CERTIFICATE_FILENAME="&#x3C;name of your certificate file&#x3E;"
 <li>And submit all the changes.</li>
 </ol>
 <p>You can now start monitoren your messages coming into the IoT Hub.</p>
+
+# Contributing
+
+This project welcomes contributions and suggestions. 
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
