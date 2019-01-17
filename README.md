@@ -20,9 +20,8 @@
 <li>
 <li>Setup the downstream edge as a downstream device:</li>
 <p>Set the Container Create Options and select <strong>Save</strong>.</p>
-    <pre><code class="lang-json">
-    {
-      {
+<pre><code class="lang-json">
+{
   "HostConfig": {
     "Privileged": true,
     "Binds": [
@@ -33,6 +32,6 @@
     ]
   }
 }
-}</code></pre>
+</code></pre>
 </li>
 </ol>
