@@ -35,6 +35,7 @@
   }
 }
 </code></pre>
+ExtraHosts is used to ensure the downstream edge can do the name resolution, as Moby doesn't support local dns. This only works if you use fixed IP addresses for the edges. You can also setup  Moby to include the local dns [See Docker Container Networking for more info: https://docs.docker.com/config/containers/container-networking/]. 
 </li><li>
 <p>And set the environment variables:</p>
 <pre><code>DOWNSTREAM_CONNECTIONSTRING = "&#x3C;Your IoT downstream edge connection string&#x3E;;GatewayHostName=&#x3C;name of your upstream edge&#x3E;"
