@@ -45,8 +45,7 @@ CERTIFICATE_FILENAME="&#x3C;name of your certificate file&#x3E;"
 <li>Setup a route on the down stream device:
 <pre><code class="lang-json">{
   "routes": {
-    "upstream": "FROM /messages/modules/SimulatedTemperatureSensor/* INTO BrokeredEndpoint(\"/modules/EdgeHierarchyModule/inputs/input\")",
-    "edge": "FROM /messages/modules/EdgeHierarchyModule/* INTO $upstream"
+    "upstream": "FROM /messages/modules/SimulatedTemperatureSensor/* INTO BrokeredEndpoint(\"/modules/EdgeHierarchyModule/inputs/input\")"
   }
 }
 </code></pre>
