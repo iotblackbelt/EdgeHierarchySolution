@@ -46,7 +46,7 @@ CERTIFICATE_FILENAME="&#x3C;name of your certificate file&#x3E;"
 <li>Setup the route on the downstream edge to the EdgeHierarchyModule to ensure all data goes to the upstream IoT Edge:
 <pre><code class="lang-json">{
   "routes": {
-    "upstream": "FROM /messages/modules/SimulatedTemperatureSensor/* INTO BrokeredEndpoint(\"/modules/EdgeHierarchyModule/inputs/input\")"
+    "upstream": "FROM /messages/modules/SimulatedTemperatureSensor/* INTO BrokeredEndpoint(\"/modules/EdgeHierarchyModule/inputs/upstream\")"
   }
 }
 </code></pre>

@@ -75,7 +75,7 @@ Client.fromEnvironment(Transport, function (err, client) {
 function pipeMessage(client, downstreamClient, inputName, msg) {
   client.complete(msg, printResultFor('Receiving message'));
 
-  if (inputName === 'input') {
+  if (inputName === 'upstream') {
     var message = msg.getBytes().toString('utf8');
     if (message) {
       var outputMsg = new Message(message);
