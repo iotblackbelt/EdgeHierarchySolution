@@ -59,7 +59,7 @@ CERTIFICATE_FILENAME="&#x3C;name of your certificate file&#x3E;"
 <p>There are some gotchas:</p>
 <ol><li>If you use the EdgeHierarchyModule to send messages to an upstream edge, the store and forward isn't active for these messages on the downstream edge.</li>
 <li>The downstream edge can still use the $upstream route to send messages directly to the IoT Hub.</li>
-<li>The messages sent through the upstream edge won't have a module associated. So if you want to route messages from a downstream edge you can follow this instruction: [https://docs.microsoft.com/en-us/azure/iot-edge/how-to-create-transparent-gateway#route-messages-from-downstream-devices]. You need to also take this into account when proccessing message in the cloud.</li></ol>
+<li>The messages sent through the upstream edge won't have a module associated. So if you want to route messages from a downstream edge you can follow this instruction: [https://docs.microsoft.com/en-us/azure/iot-edge/how-to-create-transparent-gateway#route-messages-from-downstream-devices]. You need to also take this into account when processing message in the cloud.</li></ol>
 
 # Contributing
 
