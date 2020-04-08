@@ -8,7 +8,7 @@
 <p>A good understanding of how Azure IoT Edge and IoT Hub work and some experience with deploying and developing custom Edge Modules.</p>
 
 ## How to build the module
-<p>Clone this repo and and open the folder in Visual Studio Code (with Azure IoT Edge extension installed).</p>
+<p>Clone this repo and and open the folder in Visual Studio Code (with Azure IoT Tools extension installed).</p>
 <ol>
 <li>Once opened in VS Code rename the file "module.template.json" to "module.json" and replace &#x3C;your container registry&#x3E; with the name of your container registry.</li>
 <li>Right-click the "module.json" file and select "Build and Push IoT Edge Image".</li>
@@ -59,7 +59,7 @@ CERTIFICATE_FILENAME="&#x3C;name of your certificate file&#x3E;"
 <p>There are some gotchas:</p>
 <ol><li>If you use the EdgeHierarchyModule to send messages to an upstream edge, the store and forward isn't active for these messages on the downstream edge.</li>
 <li>The downstream edge can still use the $upstream route to send messages directly to the IoT Hub.</li>
-<li>The messages sent through the upstream edge won't have a module associated. So if you want to route messages from a downstream edge you can follow this instruction: [https://docs.microsoft.com/en-us/azure/iot-edge/how-to-create-transparent-gateway#route-messages-from-downstream-devices]. You need to also take this into account when processing message in the cloud.</li></ol>
+<li>The messages sent through the upstream edge won't have a module associated. So if you want to route messages from a downstream edge you can follow this instruction: [https://docs.microsoft.com/en-us/azure/iot-edge/how-to-create-transparent-gateway#route-messages-from-downstream-devices]. You need to also take this into account when processing messages in the cloud.</li></ol>
 
 # Contributing
 

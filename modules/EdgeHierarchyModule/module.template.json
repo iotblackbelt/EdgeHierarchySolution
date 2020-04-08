@@ -1,6 +1,6 @@
 {
     "$schema-version": "0.0.1",
-    "description": "",
+    "description": "Azure IoT Edge module to enable Edge hierarchies.",
     "image": {
         "repository": "<your container registry>/edgehierarchymodule",
         "tag": {
