@@ -18,7 +18,7 @@
 <p>A hierarchy of IoT Edges can be setup using the transparant gateway approach. For more detailed information, see How an IoT Edge device can be used as a gateway, which gives a conceptual overview: [https://docs.microsoft.com/en-us/azure/iot-edge/iot-edge-as-gateway].</p>
 <p>Follow the steps below to create a hierarchy of two IoT Edge's:</p>
 <ol>
-<li>Deploy two IoT Edge's (See [https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux] for a Linux setup). One will act an upstream edge and one will act as a downstream edge. The dowwnstream edge will send its messages to the upstream edge. The upstream edge will then send the message to $upstream.</li>
+<li>Deploy two IoT Edge's (See [https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux] for a Linux setup). One will act an upstream edge and one will act as a downstream edge. The downstream edge will send its messages to the upstream edge. The upstream edge will then send the message to $upstream.</li>
 <li>Follow the walk-through to use the upstream edge as a transparent gateway: [https://docs.microsoft.com/en-us/azure/iot-edge/how-to-create-transparent-gateway]</li>
 <li>Follow the steps as described in the "Connect a downstream device to an Azure IoT Edge gateway" tutorial on the downstream edge: [https://docs.microsoft.com/en-us/azure/iot-edge/how-to-connect-downstream-device#install-certificates-using-the-os], but make sure you copy the certificate file to the directory "/edge-ca-cert".
 </li>
